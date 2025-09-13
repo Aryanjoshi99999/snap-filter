@@ -1,0 +1,11 @@
+{
+    "QueueConfigurations": [
+        {
+            "Id": "S3-event-notification-to-SQS",
+            "QueueArn": "arn:aws:sqs:ap-south-1:618329534412:snap-filter-app-ImageProcessingQueue-d5c1ZySgPsz7",
+            "Events": [
+                "s3:ObjectCreated:*"
+            ]
+        }
+    ]
+}

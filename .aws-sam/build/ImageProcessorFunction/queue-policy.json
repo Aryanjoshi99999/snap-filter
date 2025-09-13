@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "s3.amazonaws.com"
+            },
+            "Action": "SQS:SendMessage",
+            "Resource": "https://sqs.ap-south-1.amazonaws.com/618329534412/snap-filter-app-ImageProcessingQueue-d5c1ZySgPsz7",
+            "Condition": {
+                "ArnLike": {
+                    "aws:SourceArn": "arn:aws:s3:::snap-filter-app-imageuploadbucket-kfclx9ssggbe"
+                }
+            }
+        }
+    ]
+}
